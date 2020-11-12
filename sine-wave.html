@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sine wave</title>
+    <link rel="stylesheet" href="css/css-reset.css">
+    <link rel="stylesheet" href="css/main-style.css">
+    <style>
+        .char{
+            position: absolute;
+            color: #43adff;
+        }
+    </style>
+</head>
+<body style="margin: 0">
+<main>
+    <div style="display: flex;position:fixed;width: 100%;height: 100%; flex-direction:column">
+        <h1 style="margin-top: 5px;margin-bottom: 5px">Sine Wave</h1>
+        <div style="flex-direction: row;padding: 5px;justify-content: space-between">
+            <input id="text-input"type="text" style="width: 90%;">
+            <button id="button" type="button" style="width: 9%">Click Me</button>
+        </div>
+        <div id="wave-scope" style="height: 95%;position: relative ">
+
+        </div>
+    </div>
+</main>
+<script src="js/sine-wave.js"></script>
+</body>
+</html>
