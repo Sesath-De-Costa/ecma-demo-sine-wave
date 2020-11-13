@@ -35,5 +35,25 @@ button.addEventListener('click', function () {
         angle += angleIncrement;
         x = x + xchange;
     }
+
+
+    function animateSineWave() {
+        var colors = ['red', 'green','blue'];
+        for (var j = 0; true; j++) {
+            showArea.children[j].style.color = colors[i++];
+            if (i >= colors.length) {
+                i = 0;
+            }
+        }
+    }
+
+    for (var j = 0; j < inputValue.length; j++) {
+        setInterval(animateSineWave, 500);
+        setTimeout(100);
+
+
+    }
+
+
 })
 
